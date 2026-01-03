@@ -11,7 +11,7 @@ The model is trained in **°C** and displayed in **°F** for readability.
 
 ---
 
-## What you can do in the demo
+## Demo Features
 - Click **Run forecast** to fetch recent history, train the model, and generate a **10-day forecast**
 - View:
   - Forecast table (°F)
@@ -21,7 +21,7 @@ The model is trained in **°C** and displayed in **°F** for readability.
 
 ---
 
-## How it works (high level)
+## How It Works
 **Data**
 - Source: Open-Meteo *Archive API* (hourly)
 - Aggregation: hourly → daily features (means/sums)
@@ -45,7 +45,7 @@ The model is trained in **°C** and displayed in **°F** for readability.
 
 ---
 
-## 📁 Repository structure
+## Repository Structure
 ```text
 .
 ├── app.py                      # Streamlit app (web demo)
