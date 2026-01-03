@@ -90,7 +90,7 @@ def train_and_forecast(years_of_history: int, horizon_day: int):
     data = fetch_openmeteo_daily(start_d, end_d)
     data = data.interpolate(limit_direction="both").dropna()
 
-    feature_cols = ["temp_c", "rhum", "pres", "wspd", "p_]()_
+feature_cols = ["temp_c", "rhum", "pres", "wspd", "prcp"]
 
 cat > app.py << 'EOF'
 import streamlit as st
