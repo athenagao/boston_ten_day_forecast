@@ -1,12 +1,8 @@
-# boston_ten_day_forecast
-
-
-
 # Boston 10-Day Temperature Forecast (Neural Net / MLP)
 
 **Live Demo:** https://bostontendayforecast-xpmmmxdksbm8sm7nurmnf2.streamlit.app/
 
-A lightweight machine-learning baseline that trains an `MLPRegressor` on historical Boston weather (Open-Meteo Archive API) and predicts the next **10 days of daily mean temperature**.  
+ML baseline that trains an `MLPRegressor` on historical Boston weather (Open-Meteo Archive API) and predicts the next **10 days of daily mean temperature**.  
 The model is trained in **°C** and displayed in **°F** for readability.
 
 ---
@@ -16,7 +12,8 @@ The model is trained in **°C** and displayed in **°F** for readability.
 - View:
   - Forecast table (°F)
   - Forecast plot (°F)
-  - Held-out test error (MAE by horizon day)
+  - Actual vs Predicted plot for a selected horizon day (+1 to +10)
+  - Held-out test error (MAE by horizon day, °F)
   - Last ~365 days of daily mean temperature (°F)
 
 ---
@@ -48,7 +45,8 @@ The model is trained in **°C** and displayed in **°F** for readability.
 ## Repository Structure
 ```text
 .
-├── app.py                      # Streamlit app (web demo)
-├── boston_ten_day_forecast.py   # Original CLI script
+├── app.py                       # Streamlit app (web demo)
+├── boston_ten_day_forecast.py    # Original CLI script
 ├── requirements.txt
 └── README.md
+
